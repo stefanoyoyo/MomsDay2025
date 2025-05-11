@@ -228,7 +228,7 @@
         <div class="content">
           <h1>Un po' di immagini ora..</h1>
           <div class="slideshow">
-            <img src="assets/foto3.jpg" alt="Ricordi" id="slideshow-img" />
+            <img src="https://1drv.ms/i/c/f343ed142930869c/IQTSYPIuGtlxTLCI2S1gOLV1AT1pQKNd7Ip6R5e4UxLyDVE?width=960&height=1280" alt="Ricordi" id="slideshow-img" />
           </div>
         </div>
       </div>
@@ -254,7 +254,7 @@
       const pauseBtn = document.getElementById("pause-btn");
 
       let currentIndex = 0;
-      let intervalDuration = 60; // durata in secondi
+      let intervalDuration = 30; // durata in secondi
       let countdown = intervalDuration;
       let autoScrollInterval;
       let countdownInterval;
@@ -335,7 +335,7 @@
       setInterval(() => {
         slideshowIndex = (slideshowIndex + 1) % slideshowImages.length;
         slideshowImg.src = slideshowImages[slideshowIndex];
-      }, 10000);
+      }, 3000);
 
       // Avvio con loader
       window.addEventListener("load", () => {
