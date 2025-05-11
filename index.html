@@ -22,7 +22,7 @@
         font-family: "Roboto", sans-serif;
         background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
       }
-      #loader {
+      # {
         position: fixed;
         top: 0;
         left: 0;
@@ -32,7 +32,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2em;
+        font-size: 3em;
         color: #e91e63;
         font-family: "Great Vibes", cursive;
         z-index: 9999;
@@ -171,14 +171,14 @@
           font-size: 0.75em;
           font-family: "Roboto", sans-serif;
         }
-        #loader {
-          font-size: 1.5em;
+        # {
+          font-size: 3em;
         }
       }
     </style>
   </head>
   <body>
-    <div id="loader">Caricamento in corso...</div>
+    <div id="">Caricamento in corso...</div>
 
     <audio autoplay loop>
       <source src="assets/musica.mp3" type="audio/mpeg" />
@@ -247,7 +247,7 @@
     </div>
 
     <script>
-      const loader = document.getElementById("loader");
+      const  = document.getElementById("");
       const sections = document.querySelectorAll(".section");
       const container = document.getElementById("container");
       const dots = document.querySelectorAll(".dot");
@@ -338,10 +338,10 @@
         slideshowImg.src = slideshowImages[slideshowIndex];
       }, 3000);
 
-      // Avvio con loader
+      // Avvio con 
       window.addEventListener("load", () => {
         setTimeout(() => {
-          loader.style.display = "none";
+          .style.display = "none";
           updateView();
           resetTimers();
         }, 3000);
